@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://services.postcodeanywhere.co.uk/css/address-3.91.css" />
+    <script type="text/javascript" src="https://services.postcodeanywhere.co.uk/js/address-3.91.js"></script>
+
+    <script>
+        (function(n, t, i, r) {
+            var u, f;
+            n[i] = n[i] || {}, n[i].initial = {
+                accountCode: "MERCO11117",
+                host: "MERCO11117.pcapredict.com"
+            }, n[i].on = n[i].on || function() {
+                (n[i].onq = n[i].onq || []).push(arguments)
+            }, u = t.createElement("script"), u.async = !0, u.src = r, f = t.getElementsByTagName("script")[0], f.parentNode.insertBefore(u, f)
+        })(window, document, "pca", "//MERCO11117.pcapredict.com/js/sensor.js")
+    </script>
+
+
+    <!-- pre-built minified script -->
+    <!-- <script>
+        (function(n, t, i, r) {
+            var u, f;
+            n[i] = n[i] || {}, n[i].initial = {
+                accountCode: "MERCO11112",
+                host: "MERCO11112.pcapredict.com"
+            }, n[i].on = n[i].on || function() {
+                (n[i].onq = n[i].onq || []).push(arguments)
+            }, u = t.createElement("script"), u.async = !0, u.src = r, f = t.getElementsByTagName("script")[0], f.parentNode.insertBefore(u, f)
+        })(window, document, "pca", "//MERCO11112.pcapredict.com/js/sensor.js")
+
+
+
+        // pca.on("load", function(type, id, control) {
+        //     control.listen("populate", function(address) {
+        //         alert("User selected: " + address.Id);
+        //     });
+        // });
+
+        var usrlang = navigator.language ||
+        navigator.userLanguage;
+        pca.on("options", function(type, id, options) {
+            if (type == "capture+") {
+                options.culture = usrlang;
+
+                // Autocomplete is suppressed by default, enabling it doesn't look as great, but will likely save credits
+                options.suppressAutocomplete = false;
+
+                //May be able to detect autofill with this https://gist.github.com/jonathantneal/d462fc2bf761a10c9fca60eb634f6977
+            }
+        });
+    </script> -->
+
+    <!-- Sandbox using Service API -->
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+</head>
+
+<body>
+    <main>
+        <div id="defaultautocomplete">
+            <h2><a href='https://www.loqate.com/resources/support/setup-guides/advanced-setup-guide/#language'>POC with Loqate Control object</a></h2>
+            <form id="addressform" autocomplete="on">
+                <label for="address1">Address 1:</label><br>
+                <input type="text" id="address1" name="address1" placeholder="Start typing here"><br>
+
+                <label for="address2">Address 2:</label><br>
+                <input type="text" id="address2" name="address2"><br>
+
+                <label for="town_city">City:</label><br>
+                <input type="text" id="town_city" name="town_city"><br>
+
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state"><br>
+
+                <label for="zip_postal_code">Zip/Postal Code:</label><br>
+                <input type="text" id="zip_postal_code" name="zip_postal_code"><br>
+
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country"><br>
+            </form>
+            <!-- <h3 style="margin: 21px 0 0;">Free Trial Script Tag</h3>
+            <pre><code>    
+                &lt;script&gt;
+                (function(n, t, i, r) {
+                    var u, f;
+                    n[i] = n[i] || {}, n[i].initial = {
+                        accountCode: "MERCO11112",
+                        host: "MERCO11112.pcapredict.com"
+                    }, n[i].on = n[i].on || function() {
+                        (n[i].onq = n[i].onq || []).push(arguments)
+                    }, 
+                    u = t.createElement("script"), 
+                    u.async = !0, u.src = r, f = t.getElementsByTagName("script")[0], 
+                    f.parentNode.insertBefore(u, f)
+                })(window, document, "pca", "//MERCO11112.pcapredict.com/js/sensor.js")
+                &lt;/script&gt;
+            </code></pre> -->
+        </div>
+
+        <!-- <div id="sandbox">
+            <h2><a href="https://www.loqate.com/resources/support/sandbox/" target="_blank">Sandbox Test Environment</a></h2>
+
+            <div class="content">
+                <div class="fieldWrap">
+                    <input type="text" name="search" class="searchInput" id="searchBox" placeholder="Enter Address" onchange="showClear()" onkeypress="return enterSearch(event)">
+                    <button onClick="findAddress()">Search</button>
+                    <div class="clear" id="clearButton" onClick="clearSearch()">X</div>
+                </div>
+
+                <div class="fieldWrap">
+                    <div class="error" id="errorMessage"></div>
+                </div>
+
+                <div class="fieldWrap">
+                    <div id="result"></div>
+                </div>
+
+                <div class="seperator" id="seperator"></div>
+
+                <div class="fieldWrap">
+                    <div class="outputArea" id="output"></div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <!-- Control object -->
+    <script type="text/javascript" src='controlConfig.js'></script>
+</body>
+
+</html>
